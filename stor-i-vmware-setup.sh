@@ -62,4 +62,14 @@ sudo apt-get install curl
 #install bunzip
 sudo apt-get install bzip2
 
+# setup luna
+# backup fstab
+sudo cp /etc/fstab /etc/fstab.saf
+# add luna to fstab
+echo //luna.lancs.ac.uk/FST/MA/Stor-i/${USER} ${HOME}/luna cifs domain=LANCS,noauto,rw,users,sec=krb5,vers=3.1.1 0 0 | sudo tee -a /etc/fstab
+# make the luna directory under the home directory
+mkdir ${HOME}/luna
+# start luna
+mount.cifs //luna.lancs.ac.uk/FST/MA/Stor-i/${USER} ${HOME}/luna
+
 
