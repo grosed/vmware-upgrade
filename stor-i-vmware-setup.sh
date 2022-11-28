@@ -31,6 +31,13 @@ sudo apt-get install python3-tk
 sudo apt-get install tk-dev
 sudo apt-get install lzma
 sudo apt-get install liblzma-dev
+sudo apt-get install libxml2-dev
+sudo apt-get install libharfbuzz-dev
+sudo apt-get install libfribidi-dev
+sudo apt-get install libfreetype6-dev
+sudo apt-get install libpng-dev
+sudo apt-get install libtiff5-dev
+sudo apt-get install libjpeg-dev
 
 
 # install git
