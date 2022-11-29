@@ -70,7 +70,7 @@ sudo apt-get install -y curl
 
 # install R studio
 wget https://download1.rstudio.org/desktop/jammy/amd64/rstudio-2022.07.2-576-amd64.deb -O ${HOME}/Downloads/rstudio.deb
-sudo dpkg -i -f ${HOME}/Downloads/rstudio.deb
+sudo dpkg -i ${HOME}/Downloads/rstudio.deb
 
 #install bunzip
 sudo apt-get install -y bzip2
