@@ -18,32 +18,32 @@ echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codenam
 sudo apt install -y firefox
 
 # install additional development libraries
-sudo apt-get install -y libsqlite3-dev
-sudo apt-get install -y libssl-dev
-sudo apt-get install -y libffi-dev
-sudo apt-get install -y zlib1g-dev
-sudo apt-get install -y libncurses5-dev libncursesw5-dev
-sudo apt-get install -y libreadline6 libreadline6-dev
-sudo apt-get install -y libreadline-dev
-sudo apt-get install -y libbz2-dev
-sudo apt-get install -y python-tk
-sudo apt-get install -y python3-tk
-sudo apt-get install -y tk-dev
-sudo apt-get install -y lzma
-sudo apt-get install -y liblzma-dev
-sudo apt-get install -y libxml2-dev
-sudo apt-get install -y libharfbuzz-dev
-sudo apt-get install -y libfribidi-dev
-sudo apt-get install -y libfreetype6-dev
-sudo apt-get install -y libpng-dev
-sudo apt-get install -y libtiff5-dev
-sudo apt-get install -y libjpeg-dev
-sudo apt-get install -y libclang-dev
-sudo apt-get install -y libpq5
+sudo apt install -y libsqlite3-dev
+sudo apt install -y libssl-dev
+sudo apt install -y libffi-dev
+sudo apt install -y zlib1g-dev
+sudo apt install -y libncurses5-dev libncursesw5-dev
+sudo apt install -y libreadline6 libreadline6-dev
+sudo apt install -y libreadline-dev
+sudo apt install -y libbz2-dev
+sudo apt install -y python-tk
+sudo apt install -y python3-tk
+sudo apt install -y tk-dev
+sudo apt install -y lzma
+sudo apt install -y liblzma-dev
+sudo apt install -y libxml2-dev
+sudo apt install -y libharfbuzz-dev
+sudo apt install -y libfribidi-dev
+sudo apt install -y libfreetype6-dev
+sudo apt install -y libpng-dev
+sudo apt install -y libtiff5-dev
+sudo apt install -y libjpeg-dev
+sudo apt install -y libclang-dev
+sudo apt install -y libpq5
 
 
 # install git
-sudo apt-get install -y git
+sudo apt install -y git
 
 #install and configure pyenv
 git clone https://github.com/pyenv/pyenv.git ./.pyenv
@@ -63,17 +63,17 @@ pyenv global 3.9.10
 python -m pip install --upgrade pip
 
 #install R
-sudo apt-get install -y r-base
+sudo apt install -y r-base
 
 # install curl
-sudo apt-get install -y curl
+sudo apt install -y curl
 
 # install R studio
-wget https://download1.rstudio.org/desktop/jammy/amd64/rstudio-2022.07.2-576-amd64.deb -O ${HOME}/Downloads/rstudio.deb
+wget https://rstudio.org/download/latest/stable/desktop/jammy/rstudio-latest-amd64.deb -O ${HOME}/Downloads/rstudio.deb
 sudo dpkg -i ${HOME}/Downloads/rstudio.deb
 
 #install bunzip
-sudo apt-get install -y bzip2
+sudo apt install -y bzip2
 
 # setup luna
 # backup fstab
