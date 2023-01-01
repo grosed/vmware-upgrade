@@ -40,7 +40,10 @@ sudo apt install -y libtiff5-dev
 sudo apt install -y libjpeg-dev
 sudo apt install -y libclang-dev
 sudo apt install -y libpq5
-sudo apt install -y libcurl-dev
+sudo apt install -y libcurl4-gnutls-dev
+sudo apt install -y libcurl4-nss-dev
+sudo apt install -y libcurl4-openssl-dev
+
 
 # install git
 sudo apt install -y git
