@@ -59,8 +59,8 @@ sudo apt install -y build-essential
 
 # start pyenv and install a version of python
 source ./start-pyenv
-pyenv install 3.9.10
-pyenv global 3.9.10
+pyenv install 3.11.0
+pyenv global 3.11.0
 
 # upgrade pip
 python -m pip install --upgrade pip
