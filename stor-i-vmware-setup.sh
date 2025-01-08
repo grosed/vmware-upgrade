@@ -3,19 +3,19 @@ sudo apt-get update
 
 # fix firefox
 ### remove snap firefox
-sudo snap remove firefox
+#sudo snap remove firefox
 ### add repo
-sudo add-apt-repository ppa:mozillateam/ppa
+#sudo add-apt-repository ppa:mozillateam/ppa
 ### set repo pref for firefox
-echo '
-Package: *
-Pin: release o=LP-PPA-mozillateam
-Pin-Priority: 1001
-' | sudo tee /etc/apt/preferences.d/mozilla-firefox
+#echo '
+#Package: *
+#Pin: release o=LP-PPA-mozillateam
+#Pin-Priority: 1001
+#' | sudo tee /etc/apt/preferences.d/mozilla-firefox
 ### set unattended upgrades to non-snap
-echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";' | sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
+#echo 'Unattended-Upgrade::Allowed-Origins:: "LP-PPA-mozillateam:${distro_codename}";' | sudo tee /etc/apt/apt.conf.d/51unattended-upgrades-firefox
 ### install non-snap firefox
-sudo apt install -y firefox
+#sudo apt install -y firefox
 
 # install additional development libraries
 sudo apt install -y libsqlite3-dev
